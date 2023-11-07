@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="col">
-        <shared-search-box [placeholder]="placeHolder" (onValue)="searchByCountry($event)"></shared-search-box>
+        <shared-search-box [placeholder]="placeHolder" [initialValue]="initialValue"
+            (onDebounce)="searchByCountry($event)"></shared-search-box>
     </div>
 </div>
 
